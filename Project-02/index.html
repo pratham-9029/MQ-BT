@@ -4,17 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./Roboto-Fonts/stylesheet.css" type="text/css">
     <link rel="stylesheet" href="./css/style.css" type="text/css">
     <link rel="stylesheet" href="./css/media.css" type="text/css">
 </head>
 <body>
     <!-- Nav-bar Section Start -->
-     <header>
+     <header style="background-color: #f7f7f7;">
         <div class="container">
             <div class="row">
-                <div class="col">
-                    <div class="nav-bar d-flex justify-space-between">
-                        <div class="logo">
+                <div class="col " >
+                    <div class="nav-bar d-flex justify-content-center justify-space-between  align-item-baseline">
+                        <div class="logo d-flex justify-content-center align-item-center">
                             STAND BLOG 
                             <span>.</span>
                         </div>
@@ -43,5 +48,55 @@
         </div>
      </header>
     <!-- Nav-bar Section End -->
+
+     <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="./images/banner-item-01.jpg" alt="image1/jpg">
+        </div>
+        <div class="swiper-slide">
+            <img src="./images/banner-item-02.jpg" alt="image2/jpg">
+        </div>
+        <div class="swiper-slide">
+            <img src="./images/banner-item-03.jpg" alt="image3/jpg">
+        </div>
+        <div class="swiper-slide">
+            <img src="./images/banner-item-04.jpg" alt="">
+        </div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
 </body>
 </html>
