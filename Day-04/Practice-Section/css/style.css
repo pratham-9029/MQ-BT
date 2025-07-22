@@ -1,0 +1,18 @@
+:root{
+    --theme-accent:#04415f;
+}
+body{
+    background-color: #f1f5f7;
+}
+/* Header start */
+.container .navbar .logo{
+    background-color: var(--theme-accent);
+    color: white;
+} 
+.navigation .nav .dropdown .sub-dropdown{
+    display: none;
+}
+.navigation .nav .dropdown:hover .sub-dropdown{
+    display: block;
+}
+/* Header end */
