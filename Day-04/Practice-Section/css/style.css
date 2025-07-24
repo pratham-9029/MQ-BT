@@ -10,9 +10,9 @@ body{
     color: white;
 } 
 .navigation .nav .dropdown .sub-dropdown{
-    display: none;
+    /* display: none; */
 }
 .navigation .nav .dropdown:hover .sub-dropdown{
-    display: block;
+    /* display: block; */
 }
 /* Header end */
